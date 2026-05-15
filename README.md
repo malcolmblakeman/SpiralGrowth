@@ -38,8 +38,6 @@ This video explores spiral growth, emergent patterns, and how simple rules can g
 
 ## 🚀 Live Demo
 
-If deployed on Streamlit Cloud:
-
 
 https://spiralgrowth.streamlit.app
 
