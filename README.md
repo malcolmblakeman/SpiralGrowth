@@ -41,8 +41,7 @@ This video explores spiral growth, emergent patterns, and how simple rules can g
 If deployed on Streamlit Cloud:
 
 
-https://YOUR-APP-NAME.streamlit.app
-
+spiralgrowth.streamlit.app
 
 ---
 
