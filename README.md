@@ -4,6 +4,7 @@ An interactive Streamlit-based simulation of spiral growth, territory occupation
 
 This project explores emergent behavior from simple rules applied on an expanding spiral grid, producing complex and beautiful large-scale structures.
 
+![Spiral Growth Simulation](spiral_growth_example.gif)
 ---
 
 ## 🌐 Inspiration
