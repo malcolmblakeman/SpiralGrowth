@@ -887,7 +887,7 @@ if make_animation and len(frames) > 1:
     encoded_frames = []
     for f in frames:
         buf = io.BytesIO()
-        f.save(buf, format="PNG")
+        f.save(buf, format="WEBP")
         encoded_frames.append(
             base64.b64encode(buf.getvalue()).decode()
         )
@@ -913,7 +913,7 @@ if make_animation and len(frames) > 1:
         const slider = document.getElementById("slider");
 
         function render(idx) {{
-            img.src = "data:image/png;base64," + frames[idx];
+            img.src = "data:image/webp;base64," + frames[idx];
         }}
 
         slider.oninput = (e) => {{
