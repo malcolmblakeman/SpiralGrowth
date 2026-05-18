@@ -748,7 +748,7 @@ positions = []
 frames = []
 
 counter = 0
-frame_interval = max(1, (turns * num_players) // (10 * fps))
+frame_interval = max(1, (turns * num_players) // (5 * fps))
 
 progress = st.progress(0)
 
@@ -887,7 +887,7 @@ if make_animation and len(frames) > 1:
     encoded_frames = []
     for f in frames:
         buf = io.BytesIO()
-        f.save(buf, format="WEBP")
+        f.save(buf, format="WEBP", lossless=True)
         encoded_frames.append(
             base64.b64encode(buf.getvalue()).decode()
         )
