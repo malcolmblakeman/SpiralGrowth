@@ -579,7 +579,7 @@ if same_spiral:
 
         st.session_state.last_spiral = global_spiral_name
         
-fps = st.sidebar.slider("Playback FPS", 10, 60, 30)
+fps = st.sidebar.slider("Playback FPS", 10, 30, 30)
 
 make_animation = st.sidebar.checkbox("Build Frames", True)
 
