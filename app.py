@@ -510,7 +510,7 @@ PIECES = {
 st.sidebar.header("Simulation")
 
 num_players = st.sidebar.slider("Players", 1, 8, 3)
-turns = st.sidebar.slider("Turns", 100, 1000000, 10000, step=100)
+turns = st.sidebar.slider("Turns", 100, 100000, 10000, step=100)
 
 bg = hex_to_rgb(st.sidebar.color_picker("Background", "#FFFFFF"))
 
@@ -578,42 +578,7 @@ if same_spiral:
         )
 
         st.session_state.last_spiral = global_spiral_name
-
-# spiral_name = st.sidebar.selectbox(
-#     "Spiral",
-#     list(SPIRALS.keys()),
-# )
-
-# # detect spiral change
-# if "last_spiral" not in st.session_state:
-#     st.session_state.last_spiral = spiral_name
-
-# # generate new random polygon order
-# # ONLY when spiral changes
-# if spiral_name != st.session_state.last_spiral:
-
-#     st.session_state.random_polygon_order = (
-#         random.sample(range(5), 5)
-#     )
-#     st.session_state.random_hexagon_order = (
-#         random.sample(range(6), 6)
-#     )
-
-
-#     st.session_state.last_spiral = spiral_name
-
-# # initialize once
-# if "random_polygon_order" not in st.session_state:
-#     st.session_state.random_polygon_order = (
-#         random.sample(range(5), 5)
-#     )
-
-# # initialize once
-# if "random_hexagon_order" not in st.session_state:
-#     st.session_state.random_hexagon_order = (
-#         random.sample(range(6), 6)
-#     )
-
+        
 fps = st.sidebar.slider("Playback FPS", 10, 60, 30)
 
 make_animation = st.sidebar.checkbox("Build Frames", True)
